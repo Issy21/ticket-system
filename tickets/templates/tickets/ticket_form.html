@@ -1,0 +1,24 @@
+<h2>Ticket Form</h2>
+<form method="post">
+  {% csrf_token %}
+<form method="post">
+  {% csrf_token %}
+  
+  <label for="{{ form.title.id_for_label }}">Title:</label>
+  {{ form.title }}
+  <br><br>
+
+  <label for="{{ form.description.id_for_label }}">Description:</label>
+  {{ form.description }}
+  <br><br>
+
+  <label for="{{ form.status.id_for_label }}">Status:</label>
+  {{ form.status }}
+  <br><br>
+
+  <button type="submit">Save</button>
+</form>
+
+
+
+
