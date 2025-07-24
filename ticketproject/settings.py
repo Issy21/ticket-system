@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'replace-this-with-a-secure-key'
 DEBUG = True
-ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST', 'localhost')]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'ticket-system-app-9634f8b30370.herokuapp.com']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
