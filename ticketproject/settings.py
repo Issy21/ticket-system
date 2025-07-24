@@ -5,8 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'replace-this-with-a-secure-key'
 DEBUG = True
-ALLOWED_HOSTS = []
-DJANGO_SETTINGS_MODULE='ticketproject.settings'
+ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST', 'localhost')]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
