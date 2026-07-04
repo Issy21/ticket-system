@@ -1,0 +1,12 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables (important for security)
+.env
+
+
+db.sqlite3
+
+# VS Code settings
+.vscode/
