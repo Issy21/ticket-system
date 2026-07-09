@@ -68,7 +68,10 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
-
+# Security guidance based on:
+# OWASP Foundation (n.d.) Django Security Cheat Sheet.
+# Available at: https://cheatsheetseries.owasp.org/cheatsheets/Django_Security_Cheat_Sheet.html
+# (Accessed: 4 June 2026).
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #redirects to admin login form
 LOGIN_REDIRECT_URL = '/'
