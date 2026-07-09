@@ -91,7 +91,10 @@ AUTHENTICATION_BACKENDS = [
     'axes.backends.AxesStandaloneBackend',
     'django.contrib.auth.backends.ModelBackend',
 ]
-
+# Adapted from:
+# Alex Lisovoy (2014) Django login with django-axes. Stack Overflow.
+# Available at: https://stackoverflow.com/questions/25760023/django-login-with-django-axes
+# (Accessed: 4 June 2026).
 # Django Axes configuration
 AXES_FAILURE_LIMIT = 5
 AXES_COOLOFF_TIME = 1
